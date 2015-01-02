@@ -35,7 +35,9 @@
 
 <body>
   <aside>
+    <h2><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h2>
     <div id="user_meta">
+      <p>{{ TAGLINE }}</p>
       <a href="{{ SITEURL }}">
         {% if USER_LOGO_URL %}
         <img src="{{ USER_LOGO_URL }}" alt="logo">
@@ -43,8 +45,6 @@
         <img src="{{ SITEURL }}/theme/images/logo.png" alt="logo">
         {% endif %}
       </a>
-      <h2><a href="{{ SITEURL }}">{{ AUTHOR }}</a></h2>
-      <p>{{ TAGLINE }}</p>
       <ul>
         {% for title, link in MENUITEMS %}
         <li><a href="{{ link }}">{{ title }}</a></li>

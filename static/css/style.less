@@ -46,6 +46,17 @@ hr {
 }
 
 aside {
+  h2 {
+    background: @accent-dark;
+    text-transform: uppercase;
+    padding: 20px;
+    margin: 0;
+    text-align: right;
+    line-height: 1.375em;
+    a {
+      color: @white;
+    }
+  }
   div#user_meta {
     padding: 40px;
     text-align: center;
@@ -82,15 +93,19 @@ aside {
 
 main {
   header {
-    padding: 20px;
-    background: @carrot;
-    border-top: @light-grey 1px solid;
-    border-bottom: @light-grey 1px solid;
+    padding: 20px 40px;
+    background: @accent;
+    font-size: 16px;
 
     p {
-      font-weight: bold;
-      font-size: 10px;
+      color: @white;
       text-transform: uppercase;
+      margin: 1.8em 0;
+
+      a {
+        color: @white;
+        margin: 0 12px;
+      }
     }
   }
 
@@ -190,11 +205,10 @@ main {
     border-right: @light-grey 1px solid;
 
     h2 {
-      margin: 10px 0 0 0;
+      min-height: 80px;
     }
 
     div#user_meta {
-      max-width: 256px;
       text-align: right;
 
       ul {
@@ -219,6 +233,7 @@ main {
 
     header {
       border-top: 0;
+      min-height: 80px;
     }
   }
 }
