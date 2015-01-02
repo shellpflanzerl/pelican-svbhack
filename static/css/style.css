@@ -7,7 +7,7 @@ body {
   font-size: 18px;
 }
 a {
-  color: #2980b9;
+  color: #000000;
   text-decoration: none;
 }
 hr {
@@ -16,16 +16,25 @@ hr {
   height: 1px;
   border: none;
 }
-aside div#user_meta {
-  padding: 40px;
-  text-align: center;
+aside h2 {
+  background: #2c3e50;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 0;
+  text-align: right;
+  line-height: 1.375em;
 }
-aside div#user_meta h2 {
-  margin: 15px 0 5px 0;
+aside h2 a {
+  color: #ecf0f1;
+}
+aside div#user_meta {
+  padding: 40px 20px ;
+  text-align: center;
+  font-weight: lighter;
 }
 aside div#user_meta p {
-  margin: 0 0 15px 0;
-  font-size: 14px;
+  margin: 0 0 40px 0;
+  font-size: 20px;
 }
 aside div#user_meta ul {
   margin: 40px 0 0 0;
@@ -46,15 +55,18 @@ aside div#user_meta ul li a {
   color: #bdc3c7;
 }
 main header {
-  padding: 20px;
-  background: #e67e22;
-  border-top: #bdc3c7 1px solid;
-  border-bottom: #bdc3c7 1px solid;
+  padding: 20px 40px;
+  background: #34495e;
+  font-size: 16px;
 }
 main header p {
-  font-weight: bold;
-  font-size: 10px;
+  color: #ecf0f1;
   text-transform: uppercase;
+  margin: 1.8em 0;
+}
+main header p a {
+  color: #ecf0f1;
+  margin: 0 12px;
 }
 main article {
   max-width: 640px;
@@ -78,8 +90,9 @@ main article div.article_text code {
 main article div.article_text pre {
   margin: 22px 2px 22px 2px;
   padding: 2px;
+  padding-left: 6px;
   color: #000000;
-  border-left: 3px solid #e67e22;
+  border-left: 3px solid #34495e;
   font-size: 14px;
   font-family: 'Source Code Pro', monospace;
   background: #ffffff;
@@ -105,21 +118,21 @@ main footer {
 }
 main footer a.button_accent {
   padding: 10px;
-  border: 2px solid #e67e22;
+  border: 2px solid #34495e;
   border-radius: 20px;
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   text-transform: uppercase;
-  color: #e67e22;
+  color: #34495e;
   font-size: 18px;
 }
 main footer a.button_accent:hover {
   color: #ecf0f1;
-  background-color: #e67e22;
+  background-color: #34495e;
 }
 main footer a.button_accent:active {
   color: #ecf0f1;
-  background-color: #e67e22;
+  background-color: #34495e;
 }
 main div#ending_message {
   border-top: #bdc3c7 1px solid;
@@ -137,11 +150,17 @@ main div#ending_message {
     border-right: #bdc3c7 1px solid;
   }
   aside h2 {
-    margin: 10px 0 0 0;
+    min-height: 80px;
   }
   aside div#user_meta {
-    max-width: 256px;
     text-align: right;
+  }
+  aside div#user_meta p {
+    margin-left: 39%;
+    width: 61%;
+  }
+  aside div#user_meta img {
+    width: 61%;
   }
   aside div#user_meta ul li {
     display: block;
@@ -159,5 +178,6 @@ main div#ending_message {
   }
   main header {
     border-top: 0;
+    min-height: 80px;
   }
 }
