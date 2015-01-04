@@ -11,8 +11,11 @@
 @wet-asphalt: #34495e;
 @carrot: #e67e22;
 @pumpkin: #d35400;
+@sun-flower: #f1c40f;
+@alizarin: #e74c3c;
 @accent-dark: @midnight-blue;
 @accent:  @wet-asphalt;
+@accent-oppo: @alizarin;
 
 @sans: 'Source Sans Pro', sans-serif;
 @serif: 'Source Serif Pro', serif;
@@ -134,7 +137,7 @@ main {
         margin: 22px 2px 22px 2px;
         padding: 6px;
         color: @black;
-        border-left: 3px solid @accent;
+        border-left: 3px solid @accent-oppo;
         font-size: 14px;
         font-family: @mono;
         background: @realwhite;
@@ -166,18 +169,18 @@ main {
 
     a.button_accent {
       padding: 10px;
-      border: 2px solid @accent;
+      border: 2px solid @accent-oppo;
       .border-radius(20px);
       text-transform: uppercase;
-      color: @accent;
+      color: @accent-oppo;
       font-size: 18px;
       &:hover {
         color: @white;
-        background-color: @accent;
+        background-color: @accent-oppo;
       }
       &:active {
         color: @white;
-        background-color: @accent;
+        background-color: @accent-oppo;
       }
     }
 
