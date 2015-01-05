@@ -8,6 +8,12 @@
   <div class="article_text">
     {{ article.content }}
   </div>
+  <div class="article_meta">
+    <p>
+      Posted by: <a>{{ article.author }}</a>
+      on: <a>{{ article.locale_date }}</a>
+    </p>
+  </div>
 </article>
 {% if not loop.last %}
 <hr />
